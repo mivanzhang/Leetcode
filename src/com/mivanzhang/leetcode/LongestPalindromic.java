@@ -1,5 +1,8 @@
 package com.mivanzhang.leetcode;
 
+import java.io.File;
+import java.util.regex.Matcher;
+
 /**
  * Created by zhangmeng on 17/3/20.
  * https://leetcode.com/problems/longest-palindromic-substring/#/description
@@ -62,20 +65,34 @@ public class LongestPalindromic {
     }
 
     public static void main(String[] args) {
-        LongestPalindromic instance = new LongestPalindromic();
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("a"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("babad"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("cdbcbdec"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("dcedbcfbdecd"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("dcedbcbde"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("dcedbcbdecd"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("abba"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("abccbaabccba"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bb"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bbb"));
-//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bbbb"));
-        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bbbbabbbb"));
-        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bcbbabbbabbb"));
-        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("  bbabbbabb"));
+//        LongestPalindromic instance = new LongestPalindromic();
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("a"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("babad"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("cdbcbdec"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("dcedbcfbdecd"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("dcedbcbde"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("dcedbcbdecd"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("abba"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("abccbaabccba"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bb"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bbb"));
+////        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bbbb"));
+//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bbbbabbbb"));
+//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("bcbbabbbabbb"));
+//        System.out.println(" Longest Palindromic is " + instance.longestPalindrome("  bbabbbabb"));
+
+
+
+//        String str="com\\meituan\\sample\\R$styleable";
+//        System.out.println(str.replaceAll(Matcher.quoteReplacement("\\"),"."));
+//        System.out.println(str.replaceAll("\\\\","."));
+
+//        System.out.println(str.replaceAll("\\","."));
+        String str="com/meituan/sample/R$styleable";
+        System.out.println(str.replaceAll("/", "."));
+        System.out.println(str.replaceAll("/", "\\."));
+//        System.out.println(str.replaceAll(Matcher.quoteReplacement(File.separator),"."));
+//        System.out.println(str.replaceAll("//","."));
+//        System.out.println(str.replaceAll("/","."));
     }
 }

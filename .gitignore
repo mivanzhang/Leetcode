@@ -3,6 +3,7 @@
 # Built application files
 
 *.ap_
+*.class
 
 # Files for the ART/Dalvik VM
 
