@@ -63,14 +63,14 @@ public class RemoveNthNodeFromEndofList {
 
         tmpNode.next = new ListNode(3);
         tmpNode = tmpNode.next;
-////
-//        tmpNode.next = new ListNode(4);
-//        tmpNode = tmpNode.next;
-//        tmpNode.next = new ListNode(9);
-//        tmpNode = tmpNode.next;
-////
-//        tmpNode.next = new ListNode(5);
-//        tmpNode = tmpNode.next;
+//
+        tmpNode.next = new ListNode(4);
+        tmpNode = tmpNode.next;
+        tmpNode.next = new ListNode(9);
+        tmpNode = tmpNode.next;
+//
+        tmpNode.next = new ListNode(5);
+        tmpNode = tmpNode.next;
         System.out.println("after removed   " + removeNthNodeFromEndofList.removeNthFromEnd(head, 2));
     }
 }
