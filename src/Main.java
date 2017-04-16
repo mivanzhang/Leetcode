@@ -6,6 +6,7 @@ public class Main {
     private static int allOneCout = 0;
 
     public static void main(String[] args) {
+        System.out.println("findMaxForm1 return value is " + findMaxForm1());
         System.out.println("Hello World!");
         Main main = new Main();
         String[] strs = {"10", "0001", "111001", "1", "0"};
@@ -14,6 +15,17 @@ public class Main {
         int n = 1;
         System.out.println(" max size is   " + main.findMaxForm(strs, m, n));
     }
+
+    public static int findMaxForm1() {
+        try {
+            int x = 1 / 0;
+        } catch (Exception e) {
+            return 1;
+        } finally {
+            return 2;
+        }
+    }
+
 
     public int findMaxForm(String[] strs, int m, int n) {
         if (null == strs) {
